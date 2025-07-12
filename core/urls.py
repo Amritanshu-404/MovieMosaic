@@ -12,9 +12,9 @@ from .views.playlist_views import (
 )
 
 urlpatterns = [
-    path("", popular_movies, name="popular_movies"),  # Home Page
+    path("", popular_movies, name="popular_movies"),
     path("entertainment/", entertainment_view, name="entertainment"),
-    path("signup/", signup_view, name="signup"),  # Signup Page
+    path("signup/", signup_view, name="signup"),
     path("login/", login_view, name="login"),
     path("logout/", logout_view, name="logout"),
     path("movie/<int:movie_id>/", movie_detail, name="movie_detail"),

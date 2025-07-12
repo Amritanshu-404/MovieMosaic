@@ -15,7 +15,7 @@ def login_view(request):
             login(request, user)
             return redirect("entertainment")
         messages.error(request, "Invalid username or password")
-    return render(request, "Login.html")
+    return render(request, "login.html")
 
 
 def logout_view(request):
@@ -38,14 +38,14 @@ def signup_view(request):
 
         if not re.match(r"^[\w\.-]+@[\w\.-]+\.\w+$", email):
             messages.error(request, "Enter a valid email address.")
-            return render(request, "Signup.html", context)
+            return render(request, "signup.html", context)
 
         if not re.match(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$", password):
             messages.error(
                 request,
                 "Password must be at least 8 characters and include uppercase, lowercase, and a number.",
             )
-            return render(request, "Signup.html", context)
+            return render(request, "signup.html", context)
 
         if User.objects.filter(username=username).exists():
             messages.error(request, "Username already taken.")
@@ -53,7 +53,7 @@ def signup_view(request):
 
         if User.objects.filter(email=email).exists():
             messages.error(request, "Email already registered.")
-            return render(request, "Signup.html", context)
+            return render(request, "signup.html", context)
 
         user = User.objects.create_user(
             username=username, email=email, password=password
@@ -62,4 +62,4 @@ def signup_view(request):
         messages.success(request, "Account created successfully!")
         return redirect("/")
 
-    return render(request, "Signup.html")
+    return render(request, "signup.html")

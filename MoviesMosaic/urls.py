@@ -17,7 +17,5 @@ def custom_404_view(request, exception):
 
 
 handler404 = custom_404_view
-
-# ✅ Serve static files manually when DEBUG = False (for local development or custom error page styling)
 if not settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
