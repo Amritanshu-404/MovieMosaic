@@ -12,7 +12,7 @@ def popular_movies(request):
 
     if response.status_code != 200:
         messages.error(request, "TMDB API Error: Could not load movies.")
-        return render(request, "home.html", {"movies": []})
+        return render(request, "Home.html", {"movies": []})
 
     data = response.json()
     movies = [
@@ -29,7 +29,7 @@ def popular_movies(request):
         }
         for m in data.get("results", [])
     ]
-    return render(request, "home.html", {"movies": movies})
+    return render(request, "Home.html", {"movies": movies})
 
 
 def entertainment_view(request):
@@ -48,7 +48,7 @@ def entertainment_view(request):
         messages.error(request, "TMDB API Error: Could not load movies.")
         return render(
             request,
-            "entertainment.html",
+            "Entertainment.html",
             {
                 "movies": [],
                 "query": query or "",
@@ -89,7 +89,7 @@ def entertainment_view(request):
 
     return render(
         request,
-        "entertainment.html",
+        "Entertainment.html",
         {
             "movies": movies,
             "query": query or "",
