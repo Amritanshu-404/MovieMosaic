@@ -1,16 +1,16 @@
 services:
   - type: web
-    name: "your-project-name"
+    name: "MoviesMosaic"
     env: python
     buildCommand: |
       pip install -r requirements.txt
       python manage.py collectstatic --no-input
       python manage.py migrate
-    startCommand: gunicorn your_project_name.wsgi:application
+    startCommand: gunicorn MoviesMosaic.wsgi:application
     envVars:
       - key: DJANGO_SECRET_KEY
-        value: "a-50-char-secret-key"
+        value: "your-actual-50-char-secret-key"
       - key: DEBUG
         value: false
       - key: ALLOWED_HOSTS
-        value: "yourprojectname.onrender.com"
+        value: "moviemosaic-1340.onrender.com"
