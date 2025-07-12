@@ -51,4 +51,4 @@ def movie_detail(request, movie_id):
         "reviews": reviews_qs,
         "movie_id": movie_id,
     }
-    return render(request, "Movie_detail.html", context)
+    return render(request, "movie_detail.html", context)
