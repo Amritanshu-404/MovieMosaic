@@ -1,4 +1,5 @@
-﻿# 🍿🎬 MovieMosaic
+﻿# 🍿🎬 MovieMosaic - 
+> **https://moviemosaic-1340.onrender.com/**
 
 ![MovieMosaic Banner](https://github.com/Amritanshu-404/MovieMosaic/blob/main/static/Screenshot%202025-07-11%20104205.png?raw=true)
 
