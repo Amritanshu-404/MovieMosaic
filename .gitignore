@@ -7,3 +7,4 @@ venv/
 */migrations/*.py
 .DS_Store
 Thumbs.db
+requests
