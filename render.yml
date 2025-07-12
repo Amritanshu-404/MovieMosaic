@@ -5,7 +5,8 @@ services:
     buildCommand: |
       pip install -r requirements.txt
       python manage.py collectstatic --no-input
-      python manage.py migrate
+      python manage.py migrate --verbosity 3
+
     startCommand: gunicorn MoviesMosaic.wsgi:application
     envVars:
       - key: DJANGO_SECRET_KEY
