@@ -85,26 +85,6 @@
 
 ---
 
-## 📸 Screenshots
-
-<div align="center">
-
-### Home Page
-*Discover trending and popular movies*
-
-### Movie Details
-*Detailed information with reviews and ratings*
-
-### Personal Playlist
-*Your organized watchlist*
-
-### Review History
-*Track all your movie opinions*
-
-</div>
-
----
-
 ## 🎨 Key Functionalities
 
 ### For Guest Users
@@ -166,3 +146,4 @@ Have questions or feedback?
 Made with ❤️ and lots of 🍿
 
 </div>
+
