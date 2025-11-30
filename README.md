@@ -5,7 +5,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Django](https://img.shields.io/badge/Django-4.0+-green.svg)
 ![SQLite](https://img.shields.io/badge/Database-SQLite3-lightgrey.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Live](https://img.shields.io/badge/Status-Live-success.svg)
 
 **Discover trending films, share your opinions, and keep your watchlist organized — all in one place**
@@ -146,4 +145,5 @@ Have questions or feedback?
 Made with ❤️ and lots of 🍿
 
 </div>
+
 
